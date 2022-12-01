@@ -1,5 +1,7 @@
 # Advent of Code 2022
-###### Written in Rust by Adam Bates
+###### Solved with Rust by Adam Bates
+
+#### https://adventofcode.com/2022
 
 Run the help command to see detailed usage
 ```
