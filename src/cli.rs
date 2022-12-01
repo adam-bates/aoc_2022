@@ -5,12 +5,12 @@ use clap::*;
 #[command(author, version, about, long_about = None)]
 pub struct Args {
     /// Which day to solve
-    #[arg(short, long)]
-    pub day: usize,
+    #[arg(short, long, default_value_t = -1)]
+    pub day: i8,
 
     /// Which day's part to solve
-    #[arg(short, long, default_value_t = 1)]
-    pub part: u8, 
+    #[arg(short, long, default_value_t = -1)]
+    pub part: i8, 
 }
 
 pub fn parse_args() -> Args {
@@ -18,6 +18,8 @@ pub fn parse_args() -> Args {
 
     if args.day == 0 {
         args.day = 1;
+    } else if args.day > 25 {
+        args.day = 25;
     }
 
     if args.part == 0 {

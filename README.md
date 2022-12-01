@@ -8,8 +8,8 @@ Run the help command to see detailed usage
 cargo run -- --help
 ```
 
-Example usage for day 1, part 2
+Example usage for latest solution
 ```
-cargo run -- -d 1 -p 2
+cargo run
 ```
 
