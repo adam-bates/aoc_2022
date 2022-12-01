@@ -4,7 +4,7 @@ use crate::{utils, result::*};
 
 const INPUT_FILE: &'static str = "input_1.txt";
 
-pub fn part_1() -> Result<i32> {
+pub fn part_1() -> Result<String> {
     let input = utils::read_input_file(INPUT_FILE)?;
 
     let mut max = 0;
@@ -24,10 +24,10 @@ pub fn part_1() -> Result<i32> {
         }
     }
 
-    return Ok(max);
+    return Ok(max.to_string());
 }
 
-pub fn part_2() -> Result<i32> {
+pub fn part_2() -> Result<String> {
     let input = utils::read_input_file(INPUT_FILE)?;
 
     let mut max = [0, 0, 0];
@@ -54,8 +54,8 @@ pub fn part_2() -> Result<i32> {
         }
     }
 
-    let max = max.iter().sum();
+    let max: i32 = max.iter().sum();
 
-    return Ok(max);
+    return Ok(max.to_string());
 }
 
