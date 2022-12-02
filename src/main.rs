@@ -16,7 +16,7 @@ type SolutionDay<'a> = (SolutionPart<'a>, SolutionPart<'a>);
 fn main() -> Result {
     let solutions: Vec<SolutionDay> = vec![
         (&day_1::part_1, &day_1::part_2), // DAY 1
-        // (&day_2::part_1, &day_2::part_2), // DAY 2
+        (&day_2::part_1, &day_2::part_2), // DAY 2
         // (&day_3::part_1, &day_3::part_2), // DAY 3
         // (&day_4::part_1, &day_4::part_2), // DAY 4
         // (&day_5::part_1, &day_5::part_2), // DAY 5
