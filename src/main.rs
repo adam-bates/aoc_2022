@@ -24,7 +24,7 @@ fn main() -> Result {
         (&day_7::part_1, &day_7::part_2), // DAY 7
         (&day_8::part_1, &day_8::part_2), // DAY 8
         // (&day_9::part_1, &day_9::part_2), // DAY 9
-        // (&day_10::part_1, &day_10::part_2), // DAY 10
+        (&day_10::part_1, &day_10::part_2), // DAY 10
         // (&day_11::part_1, &day_11::part_2), // DAY 11
         // (&day_12::part_1, &day_12::part_2), // DAY 12
         // (&day_13::part_1, &day_13::part_2), // DAY 13
